@@ -23,6 +23,7 @@ export async function getInitialState(): Promise<{
 }> {
   const fetchUserInfo = async () => {
     try {
+      // 查询当前用户信息
       const msg = await queryCurrentUser({
         skipErrorHandler: true,
       });
