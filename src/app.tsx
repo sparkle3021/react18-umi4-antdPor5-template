@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 import RightContent from '@/components/RightContent';
 import { LinkOutlined } from '@ant-design/icons';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
@@ -57,7 +57,8 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
       // 添加水印 content 水印内容
       // content: initialState?.currentUser?.name,
     },
-    footerRender: () => <Footer />,
+    // 页脚内容
+    // footerRender: () => <Footer />,
     onPageChange: () => {
       const { location } = history;
       // 如果没有登录，重定向到 login
